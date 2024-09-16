@@ -1,0 +1,83 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+ 
+
+}
+.App{
+  /* padding:10px;
+  
+  max-width: 700px;
+  margin:20px auto; */
+  
+}
+.btn{
+  border:none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.btn-add{
+  background-color: black;
+  color:white;
+  cursor:pointer;
+}
+.addContainer{
+ position:absolute;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.addContainer form{
+  width:420px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.2);
+  border-radius: 5px;
+}
+.addContainer form input{
+  font-size: 18px;
+  padding: 5px;
+}
+.addContainer form label{
+  font-size:18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.addContainer form button{
+  background-color: blue;
+  color:white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.addContainer form .close-btn{
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.tableContainer table{
+  margin-top: 50px;
+}
+.tableContainer table thead tr{
+  background-color: white;
+}
+.tableContainer table thead tr th{
+  min-width: 200px;
+  padding: 7px;
+}
