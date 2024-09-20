@@ -110,7 +110,7 @@ function LoginForm({ onLogin }) {
     setSubmitted(true);
 
     try {
-      const response = await axios.post('http://localhost:8083/api/auth/login', {
+      const response = await axios.post('https://tutor-me-finalyear.onrender.com/api/auth/login', {
         email,
         password,
         role,
@@ -215,7 +215,7 @@ function RegisterTeacherForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8083/registerTeacher', formData);
+      const response = await axios.post('https://tutor-me-finalyear.onrender.com/registerTeacher', formData);
       if (response.data.success) {
         alert('Teacher registration successful');
         navigate('/');
@@ -311,7 +311,7 @@ function RegisterStudentForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8083/registerStudent', formData);
+      const response = await axios.post('https://tutor-me-finalyear.onrender.com/registerStudent', formData);
       if (response.data.success) {
         alert('Student registration successful');
         navigate('/');

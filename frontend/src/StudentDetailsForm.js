@@ -21,7 +21,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 
-//     const response = await fetch('http://localhost:8083/createSale', {
+//     const response = await fetch('https://tutor-me-finalyear.onrender.com/createSale', {
 //       method: 'POST',
 //       headers: {
 //         'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ function StudentDetailsForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:8083/createSale', {
+    const response = await fetch('https://tutor-me-finalyear.onrender.com/createSale', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -170,7 +170,7 @@
 //   useEffect(() => {
 //     const fetchCourses = async () => {
 //       try {
-//         const response = await axios.get('http://localhost:8083/allCourses');
+//         const response = await axios.get('https://tutor-me-finalyear.onrender.com/allCourses');
 //         if (subject) {
 //           const filteredCourses = response.data.data.filter(course => course.branch.toLowerCase() === subject.toLowerCase());
 //           setCourses(filteredCourses);
@@ -217,7 +217,7 @@ function SubjectTutors() {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get('http://localhost:8083/allCourses');
+        const response = await axios.get('https://tutor-me-finalyear.onrender.com/allCourses');
         const filteredCourses = response.data.data.filter(course => course.branch.toLowerCase() === subject.toLowerCase());
         setCourses(filteredCourses);
       } catch (error) {

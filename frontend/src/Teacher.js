@@ -34,7 +34,7 @@
 //       }
 
 //       try {
-//         const response = await axios.get('http://localhost:8083/teacherDashboard', {
+//         const response = await axios.get('https://tutor-me-finalyear.onrender.com/teacherDashboard', {
 //           params: { tutorId }, // Pass tutorid as a query parameter
 //           headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' } // Fixed missing backticks
 //         });
@@ -135,7 +135,7 @@ function Teacher() {
       }
 
       try {
-        const response = await axios.get('http://localhost:8083/teacherDashboard', {
+        const response = await axios.get('https://tutor-me-finalyear.onrender.com/teacherDashboard', {
           params: { tutorId },
           headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' }
         });
@@ -168,7 +168,7 @@ function Teacher() {
   const handleCourseSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8083/createCourse', {
+      const response = await axios.post('https://tutor-me-finalyear.onrender.com/createCourse', {
         ...courseData,
         tutor: tutorId // Include tutorId in the course data
       });

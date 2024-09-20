@@ -39,7 +39,7 @@
 //     // Fetch purchased courses for the student
 //     const fetchPurchasedCourses = async () => {
 //       try {
-//         const response = await axios.get(`http://localhost:8083/api/sales/${studentId}`);
+//         const response = await axios.get(`https://tutor-me-finalyear.onrender.com/api/sales/${studentId}`);
 //         setPurchasedCourses(response.data);
 //       } catch (error) {
 //         console.error("Error fetching purchased courses:", error);
@@ -229,7 +229,7 @@ function Student() {
     if (studentId) {
       const fetchPurchasedCourses = async () => {
         try {
-          const response = await axios.get(`http://localhost:8083/api/sales/${studentId}`);
+          const response = await axios.get(`https://tutor-me-finalyear.onrender.com/api/sales/${studentId}`);
           setPurchasedCourses(response.data);
         } catch (error) {
           console.error("Error fetching purchased courses:", error);
