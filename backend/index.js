@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(cors());
 app.use(express.json());
-const PORT = 8083 || process.env.PORT;
+const PORT = 8080 || process.env.PORT;
 const bcrypt = require('bcryptjs');
 const authRoutes = require('./routes/auth');
 const studentModel = require('./models/Student');
